@@ -1,0 +1,10 @@
+{
+  "info": {
+    "name": "FLORACORE Ledger (Backend-Min)",
+    "_postman_id": "c9da1d0f-aaaa-bbbb-cccc-ddddeeefff11",
+    "description": "Interactúa con los endpoints mínimos del backend para anclaje, emisión y verificación mock de VCs, y gestión de consentimientos.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": []
+}
+
