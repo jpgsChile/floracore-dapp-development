@@ -33,7 +33,8 @@ if (!fs.existsSync(deploymentsPath)) {
 
 // Configuración del proveedor RPC y la wallet (opcional)
 const rpc = process.env.RPC_URL_FUJI;
-const pk = process.env.PRIVATE_KEY;
+const pkRaw = process.env.PRIVATE_KEY;
+const pk = pkRaw && pkRaw.startsWith("0x") ? pkRaw : (pkRaw ? ("0x" + pkRaw) : pkRaw);
 let provider: ethers.JsonRpcProvider | null = null;
 let wallet: ethers.Wallet | null = null;
 if (!rpc || !pk) {
